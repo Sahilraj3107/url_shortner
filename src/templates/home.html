@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask application</title>
+</head>
+<body>
+    <h1>Create my first Flask application to test my ability</h1>
+    
+    <form action="/" method="POST">
+        <input type="url" name="url" placeholder="www.example.com">
+        <button type="submit">Submit</button>
+    </form>
+    {% if output %}
+        <h3>{{output}}</h3>
+    {% endif %}  
+</body>
+</html>
